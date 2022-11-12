@@ -1,13 +1,14 @@
 {
     "name": "windy-plugin-mah",
-    "version": "0.5.0",
+    "version": "0.5.4",
     "description": "mah windy test plugin.",
     "main": "dist/plugin.js",
     "scripts": {
+        "build": "node ./compiler.js --build --transpile",
         "start": "node ./compiler.js --build --watch --prompt --serve --transpile",
         "start-dev": "node ./compiler.js --build --watch --serve --transpile",
         "prepublishOnly": "node ./test/prepublish.js",
-        "test": "node ./test/prepublish.js"
+        "test": "node ./test/prepublish.js",
     },
     "repository": {
         "type": "git",
